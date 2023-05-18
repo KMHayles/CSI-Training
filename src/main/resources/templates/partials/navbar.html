@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<head th:replace="partials/head :: head">
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>CSI Training</title>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<nav th:fragment="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
 	<div class="container-fluid">
 		<a class="navbar-brand" th:href="@{/home}">
 			<img src="/img/csi-logo.png" alt="csi" width="120" height="100">
 		</a>
-		<span>SAPD CSI Training Class 2023-</span>
+		<span>SAPD CSI Training Class 2023-A</span>
 		<div class="collapse navbar-collapse ps-5" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle pe-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Curriculum
 					</a>
 					<ul class="dropdown-menu">
@@ -23,18 +26,32 @@
 						<li><a class="dropdown-item" href="#">Packaging</a></li>
 					</ul>
 				</li>
-				<li class="nav-item px-5">
-					<a class="nav-link" href="#">Administrative Directives</a>
+				<li class="nav-item dropdown pe-5">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Required Reading
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="">Crime Scene SOP</a></li>
+						<li><a class="dropdown-item" href="">General Manual</a></li>
+						<li><a class="dropdown-item" th:href="@{/AD}">Administrative Directives</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown pe-5">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Criminal Code Statutes
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Texas Penal Code</a></li>
+						<li><a class="dropdown-item" href="#">Code of Criminal Procedure</a></li>
+					</ul>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Crime Scene SOP</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Penal Code</a>
+					<a class="nav-link" href="#">Logout</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
+
 </body>
 </html>
