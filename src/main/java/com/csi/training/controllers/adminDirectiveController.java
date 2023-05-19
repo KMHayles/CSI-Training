@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class adminDirectiveController {
 
-    @GetMapping("/AD")
+    @GetMapping("/administrativeDirectives")
     public String returnAdminPage() {
         return "users/admin";
     }
