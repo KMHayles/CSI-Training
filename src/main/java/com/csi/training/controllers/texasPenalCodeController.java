@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class texasPenalCodeController {
 
-    @GetMapping("/TX")
+    @GetMapping("/TXpdf")
     public String returnTexasPenalPage() {
         return "users/texasPenalCode";
     }
