@@ -1,0 +1,20 @@
+body {
+    background: url(img/csi-truck.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page-wrapper img {
+    display: block;
+    width: 340px;
+    height: 300px;
+}
+
