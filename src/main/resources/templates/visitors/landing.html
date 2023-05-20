@@ -7,8 +7,14 @@
 
 </head>
 <body>
+<div class="header">
 	<div class="page-wrapper">
-		<h1 class="animate__animated animate__backInDown"><a th:href="@{/home}"> <img src="/img/csi-logo.png" alt="csi"></a> </h1>
+		<div class="animate__animated animate__backInDown"><a th:href="@{/home}"> <img src="/img/csi-logo.png" alt="csi"></a></div>
+			<div class="centered-links">
+				<div class="animate__animated animate__backInRight register-btn"><a th:href="@{/home}">Register</a></div>
+				<div class="animate__animated animate__backInRight login-btn"><a th:href="@{/home}">Login</a></div>
+			</div>
 	</div>
+</div>
 </body>
 </html>
