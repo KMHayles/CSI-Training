@@ -12,7 +12,31 @@
 		<div class="animate__animated animate__backInDown"><a th:href="@{/home}"> <img src="/img/csi-logo.png" alt="csi"></a></div>
 			<div class="centered-links">
 				<div class="animate__animated animate__backInRight register-btn"><a th:href="@{/home}">Register</a></div>
-				<div class="animate__animated animate__backInRight login-btn"><a th:href="@{/home}">Login</a></div>
+				<div class="animate__animated animate__backInRight login-btn">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Login
+					</button>
+				</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
 			</div>
 	</div>
 </div>
