@@ -2,30 +2,38 @@
 <html lang="en">
 
 <head th:replace="~{partials/head :: head}">
-  <title>CSI Training</title>
+<title>CSI Training</title>
 
 </head>
 <body>
 <nav th:replace="~{partials/navbar :: navbar}"></nav>
 
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <h2>Texas Penal Code</h2>
-      <div><a href="#" onclick="togglePDF(1)">CHAPTER 1. GENERAL PROVISIONS</a></div>
-      <div class="pdf-container" id="tx-pdf-container-1">
-        <embed src="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm" type="application/pdf" width="100%" height="600px" />
-      </div>
-      <div><a href="#" onclick="togglePDF(2)">CHAPTER 2. BURDEN OF PROOF</a></div>
-      <div class="pdf-container" id="tx-pdf-container-2">
-        <embed src="https://statutes.capitol.texas.gov/Docs/PE/pdf/PE.2.pdf" type="application/pdf" width="100%" height="600px" />
-      </div>
-      <div><a href="#" onclick="togglePDF(3)">CHAPTER 3.</a></div>
-      <div class="pdf-container" id="tx-pdf-container-3">
-        <embed src="https://statutes.capitol.texas.gov/Docs/PE/pdf/PE.2.pdf" type="application/pdf" width="100%" height="600px" />
-      </div>
-    </div>
-  </div>
+	<div class="row">
+		<div class="col">
+		<h2>Texas Penal Code</h2>
+		<div><a href="#" onclick="togglePDF(1)">CHAPTER 1. GENERAL PROVISIONS</a></div>
+		<div class="pdf-container" id="tx-pdf-container-1">
+			<embed src="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm" type="application/pdf" width="100%" height="600px" />
+		</div>
+		<div><a href="#" onclick="togglePDF(2)">CHAPTER 2. BURDEN OF PROOF</a></div>
+		<div class="pdf-container" id="tx-pdf-container-2">
+			<embed src="https://statutes.capitol.texas.gov/Docs/PE/pdf/PE.2.pdf" type="application/pdf" width="100%" height="600px" />
+		</div>
+		<div><a href="#" onclick="togglePDF(3)">CHAPTER 3.</a></div>
+		<div class="pdf-container" id="tx-pdf-container-3">
+			<embed src="https://statutes.capitol.texas.gov/Docs/PE/pdf/PE.2.pdf" type="application/pdf" width="100%" height="600px" />
+		</div>
+		<div><a href="#" onclick="togglePDF(4)">CHAPTER 4.</a></div>
+		<div class="pdf-container" id="tx-pdf-container-4">
+			<embed src="https://statutes.capitol.texas.gov/Docs/PE/pdf/PE.2.pdf" type="application/pdf" width="100%" height="600px" />
+		</div>
+		<div><a href="#" onclick="togglePDF(5)">CHAPTER 5.</a></div>
+		<div class="pdf-container" id="tx-pdf-container-5">
+			<embed src="https://statutes.capitol.texas.gov/Docs/PE/pdf/PE.2.pdf" type="application/pdf" width="100%" height="600px" />
+		</div>
+		</div>
+	</div>
 </div>
 
 <script src="/js/TX.js"></script>
